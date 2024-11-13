@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+             <div class="card">
+                <div class="card-header bg-info">
+                    Menu
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="" class="list-group-item">Daftar Karyawan</a>
+                        <a href="" class="list-group-item">Tambah Karyawan</a>                        
+                    </div>
+                </div>
+             </div>   
+            </div>
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-header bg-info" >
+                        Tambah Karyawan
+                    </div>
+
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="txtNama"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Masa Kerja</label>
+                            <input type="number" class="form-control" id="txtMasakerja"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nomor Induk</label>
+                            <select class="form-control" id="txtNomorinduk">
+                                <option value="">Pilihan Nomor Induk</option>
+                                <option value="1234567890">1234567890</option>
+                                <option value="234567891">234567891</option>
+                                <option value="3456789012">3456789012</option>                                
+                                <option value="4567890123">4567890123</option>
+                                <option value="5678901234">5678901234</option>
+                                <option value="6789012345">6789012345</option>
+                                <option value="7890123456">7890123456</option>
+                                <option value="8901234567">8901234567</option>
+                                <option value="9012345678">9012345678</option>
+                                <option value="0123456789">0123456789</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Gaji Karyawan</label>
+                            <select class="form-control" id="txtGaji">
+                                <option value="">Pilihan Gaji Karyawan</option>
+                                <option value="4.000.000">4.000.000</option>
+                                <option value="7.000.000">7.000.000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary" onclick="tambahKaryawan()">Simpan</button>
+                        <button class="btn btn-secondary" onclick="cancel()">Cancel</button>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <table class="table table-striped" id="tblKaryawan">
+                                <div class="card-header bg-info">DAFTAR KARYAWAN</div>
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama</th>
+                                        <th>MasaKerja</th>
+                                        <th>No Induk</th>
+                                        <th>Gaji</th>
+                                        <th>Edit</th>
+                                        <th>Hapus</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./daftarkaryawan.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
